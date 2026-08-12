@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>松本コージ｜オンライン英検教室 帰宅部英検部</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Hiragino Kaku Gothic ProN",
+        "Yu Gothic",
+        sans-serif;
+      color: #24301f;
+      background: #ffffff;
+    }
+
+    .hero {
+      min-height: 100vh;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(255,255,255,0.96) 0%,
+          rgba(255,255,255,0.86) 35%,
+          rgba(255,255,255,0.20) 62%,
+          rgba(255,255,255,0.02) 100%
+        ),
+        url("koji-top.jpg");
+
+      background-size: cover;
+      background-position: center center;
+
+      display: flex;
+      align-items: center;
+      padding: 70px 8%;
+    }
+
+    .hero-content {
+      width: 48%;
+      max-width: 620px;
+    }
+
+    .small-title {
+      font-size: 16px;
+      letter-spacing: 0.12em;
+      margin-bottom: 24px;
+      color: #65743c;
+      font-weight: 600;
+    }
+
+    h1 {
+      font-family:
+        "Yu Mincho",
+        "Hiragino Mincho ProN",
+        serif;
+
+      font-size: clamp(48px, 6vw, 82px);
+      line-height: 1.18;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      margin-bottom: 30px;
+      color: #1e281a;
+    }
+
+    .lead {
+      font-size: 23px;
+      line-height: 1.8;
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
+
+    .passport {
+      display: inline-block;
+      font-size: 20px;
+      color: #53672d;
+      border-bottom: 1px solid #899b57;
+      padding-bottom: 6px;
+      margin-bottom: 24px;
+      font-weight: 700;
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 2;
+      margin-bottom: 35px;
+      color: #46503f;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      text-decoration: none;
+      padding: 15px 28px;
+      border-radius: 50px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .button-main {
+      background: #687d35;
+      color: white;
+    }
+
+    .button-sub {
+      background: rgba(255,255,255,0.8);
+      color: #4d5e2d;
+      border: 1px solid #687d35;
+    }
+
+    .next-section {
+      padding: 100px 8%;
+      text-align: center;
+      background: #f7f6ef;
+    }
+
+    .next-section h2 {
+      font-family:
+        "Yu Mincho",
+        "Hiragino Mincho ProN",
+        serif;
+      font-size: clamp(34px, 5vw, 60px);
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+
+    .next-section p {
+      font-size: 18px;
+      line-height: 2;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #555f4e;
+    }
+
+    @media (max-width: 768px) {
+
+      .hero {
+        min-height: 100svh;
+        align-items: flex-end;
+        padding: 50px 25px;
+
+        background:
+          linear-gradient(
+            0deg,
+            rgba(255,255,255,0.97) 0%,
+            rgba(255,255,255,0.86) 42%,
+            rgba(255,255,255,0.05) 70%
+          ),
+          url("koji-top.jpg");
+
+        background-size: cover;
+        background-position: 62% center;
+      }
+
+      .hero-content {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 46px;
+      }
+
+      .lead {
+        font-size: 18px;
+      }
+
+      .description {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="small-title">
+        オンライン英検教室「帰宅部英検部」
+      </div>
+
+      <h1>
+        英語で、<br>
+        行きたい場所へ。
+      </h1>
+
+      <div class="lead">
+        「普通の子」が、<br>
+        自分の未来を選べるようになる英語の教室。
+      </div>
+
+      <div class="passport">
+        英検は、未来へ向かうパスポート。
+      </div>
+
+      <div class="description">
+        22年間、子どもたちの答案やノートを見ながら、<br>
+        一人ひとりの「現在地」を見続けてきました。
+      </div>
+
+      <div class="buttons">
+        <a class="button button-main" href="#lesson">
+          英検レッスンについて
+        </a>
+
+        <a class="button button-sub" href="#about">
+          松本コージについて
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="next-section" id="lesson">
+
+    <h2>
+      英検は、人生の練習試合。
+    </h2>
+
+    <p>
+      合格することだけが目的ではありません。<br>
+      今の自分を知り、挑戦し、失敗し、また進む。<br>
+      英検を通して、自分の未来を自分で選ぶ力を育てていきます。
+    </p>
+
+  </section>
+
+</body>
+</html>
