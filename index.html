@@ -3,13 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>松本コージ｜オンライン英検教室 帰宅部英検部</title>
 
   <style>
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -19,12 +25,19 @@
         "Hiragino Kaku Gothic ProN",
         "Yu Gothic",
         sans-serif;
+
       color: #24301f;
       background: #ffffff;
+      line-height: 1.8;
     }
+
+    /* =========================
+       TOP
+    ========================= */
 
     .hero {
       min-height: 100vh;
+
       background:
         linear-gradient(
           90deg,
@@ -56,12 +69,15 @@
       font-weight: 600;
     }
 
-    h1 {
+    h1,
+    h2 {
       font-family:
         "Yu Mincho",
         "Hiragino Mincho ProN",
         serif;
+    }
 
+    h1 {
       font-size: clamp(48px, 6vw, 82px);
       line-height: 1.18;
       font-weight: 500;
@@ -101,6 +117,7 @@
     }
 
     .button {
+      display: inline-block;
       text-decoration: none;
       padding: 15px 28px;
       border-radius: 50px;
@@ -114,34 +131,268 @@
     }
 
     .button-sub {
-      background: rgba(255,255,255,0.8);
+      background: rgba(255,255,255,0.85);
       color: #4d5e2d;
       border: 1px solid #687d35;
     }
 
-    .next-section {
-      padding: 100px 8%;
-      text-align: center;
-      background: #f7f6ef;
+    .button:hover {
+      opacity: 0.8;
     }
 
-    .next-section h2 {
+
+    /* =========================
+       共通
+    ========================= */
+
+    .section {
+      padding: 110px 8%;
+    }
+
+    .section-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      color: #75864b;
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      margin-bottom: 18px;
+      font-weight: bold;
+    }
+
+    .section h2 {
+      font-size: clamp(34px, 5vw, 58px);
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 35px;
+    }
+
+    .section-text {
+      max-width: 760px;
+      font-size: 17px;
+      line-height: 2.1;
+      color: #4c5547;
+    }
+
+    .center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+    /* =========================
+       人生の練習試合
+    ========================= */
+
+    .practice {
+      background: #f7f6ef;
+      text-align: center;
+    }
+
+    .practice .section-text {
+      margin: 0 auto;
+    }
+
+    .large-message {
+      margin-top: 55px;
       font-family:
         "Yu Mincho",
         "Hiragino Mincho ProN",
         serif;
-      font-size: clamp(34px, 5vw, 60px);
-      font-weight: 500;
-      margin-bottom: 30px;
+      font-size: clamp(25px, 3vw, 38px);
+      line-height: 1.7;
+      color: #637338;
     }
 
-    .next-section p {
-      font-size: 18px;
-      line-height: 2;
-      max-width: 700px;
-      margin: 0 auto;
-      color: #555f4e;
+
+    /* =========================
+       全部できなくていい
+    ========================= */
+
+    .one-thing {
+      background: white;
     }
+
+    .one-thing-box {
+      border-left: 3px solid #839355;
+      padding-left: 35px;
+      margin-top: 45px;
+      max-width: 760px;
+    }
+
+    .one-thing-box strong {
+      display: block;
+      font-family:
+        "Yu Mincho",
+        "Hiragino Mincho ProN",
+        serif;
+      font-size: 28px;
+      line-height: 1.7;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+
+    /* =========================
+       見立て
+    ========================= */
+
+    .assessment {
+      background: #eef1e6;
+    }
+
+    .type-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 55px;
+    }
+
+    .type-card {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 4px;
+      min-height: 280px;
+    }
+
+    .type-number {
+      color: #7a8d4b;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      margin-bottom: 16px;
+      font-weight: bold;
+    }
+
+    .type-card h3 {
+      font-family:
+        "Yu Mincho",
+        "Hiragino Mincho ProN",
+        serif;
+      font-size: 23px;
+      line-height: 1.6;
+      margin-bottom: 18px;
+      font-weight: 500;
+    }
+
+    .type-card p {
+      font-size: 15px;
+      line-height: 1.9;
+      color: #596052;
+    }
+
+
+    /* =========================
+       帰宅部英検部
+    ========================= */
+
+    .home-club {
+      background: #ffffff;
+    }
+
+    .home-club-box {
+      max-width: 820px;
+      background: #f7f6ef;
+      padding: 55px;
+      margin-top: 45px;
+    }
+
+    .home-club-box h3 {
+      font-family:
+        "Yu Mincho",
+        "Hiragino Mincho ProN",
+        serif;
+      font-size: 29px;
+      font-weight: 500;
+      margin-bottom: 22px;
+    }
+
+    .home-club-box p {
+      font-size: 16px;
+      line-height: 2.1;
+      color: #50584b;
+    }
+
+
+    /* =========================
+       松本コージ
+    ========================= */
+
+    .about {
+      background: #263021;
+      color: white;
+    }
+
+    .about .section-label {
+      color: #b9c88e;
+    }
+
+    .about h2 {
+      color: white;
+    }
+
+    .about .section-text {
+      color: #e1e5dd;
+    }
+
+    .story-line {
+      margin-top: 50px;
+      font-size: 16px;
+      line-height: 2.3;
+      color: #e1e5dd;
+      max-width: 800px;
+    }
+
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta {
+      background: #f3f0e3;
+      text-align: center;
+    }
+
+    .cta h2 {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-text {
+      max-width: 700px;
+      margin: 0 auto 35px;
+      font-size: 17px;
+      line-height: 2;
+      color: #50584b;
+    }
+
+    .cta-note {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #777;
+    }
+
+
+    /* =========================
+       フッター
+    ========================= */
+
+    footer {
+      background: #1f271c;
+      color: #dfe4da;
+      text-align: center;
+      padding: 45px 20px;
+      font-size: 13px;
+      line-height: 2;
+    }
+
+
+    /* =========================
+       スマホ
+    ========================= */
 
     @media (max-width: 768px) {
 
@@ -168,7 +419,7 @@
       }
 
       h1 {
-        font-size: 46px;
+        font-size: 45px;
       }
 
       .lead {
@@ -178,11 +429,46 @@
       .description {
         font-size: 14px;
       }
+
+      .section {
+        padding: 80px 25px;
+      }
+
+      .section h2 {
+        font-size: 34px;
+      }
+
+      .section-text {
+        font-size: 16px;
+      }
+
+      .type-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .type-card {
+        min-height: auto;
+      }
+
+      .home-club-box {
+        padding: 35px 25px;
+      }
+
+      .one-thing-box {
+        padding-left: 20px;
+      }
+
     }
+
   </style>
+
 </head>
 
+
 <body>
+
+
+  <!-- TOP -->
 
   <section class="hero">
 
@@ -212,6 +498,7 @@
       </div>
 
       <div class="buttons">
+
         <a class="button button-main" href="#lesson">
           英検レッスンについて
         </a>
@@ -219,24 +506,345 @@
         <a class="button button-sub" href="#about">
           松本コージについて
         </a>
+
       </div>
 
     </div>
-  </section>
-
-  <section class="next-section" id="lesson">
-
-    <h2>
-      英検は、人生の練習試合。
-    </h2>
-
-    <p>
-      合格することだけが目的ではありません。<br>
-      今の自分を知り、挑戦し、失敗し、また進む。<br>
-      英検を通して、自分の未来を自分で選ぶ力を育てていきます。
-    </p>
 
   </section>
+
+
+
+  <!-- 英検は人生の練習試合 -->
+
+  <section class="section practice" id="lesson">
+
+    <div class="section-inner">
+
+      <div class="section-label">
+        EIKEN IS PRACTICE FOR LIFE
+      </div>
+
+      <h2>
+        英検は、人生の練習試合。
+      </h2>
+
+      <p class="section-text center">
+        合格することだけが目的ではありません。<br>
+        今の自分を知り、挑戦し、間違え、またやってみる。<br><br>
+        英検は、自分の現在地を知り、<br>
+        「次はどうしよう」と考えるための一つの機会です。
+      </p>
+
+      <div class="large-message">
+        止まってもいい。<br>
+        また、自分の歩幅で歩き出せばいい。
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- 全部できなくていい -->
+
+  <section class="section one-thing">
+
+    <div class="section-inner">
+
+      <div class="section-label">
+        ONE THING IS ENOUGH
+      </div>
+
+      <h2>
+        全部できなくていい。
+      </h2>
+
+      <p class="section-text">
+        国語も、数学も、運動も、全部できる必要はありません。
+        子どもたちを長く見てきて思うのは、
+        何か一つ「これならできる」と思えるものがあることの大切さです。
+      </p>
+
+      <div class="one-thing-box">
+
+        <strong>
+          「英語だけは少しできる。」<br>
+          それが、その子の軸になることがある。
+        </strong>
+
+        <p>
+          小さな「できた」の積み重ねが、
+          「自分にもできるかもしれない」という感覚につながっていく。
+          英語や英検が、そのきっかけの一つになればと思っています。
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- 見立て -->
+
+  <section class="section assessment">
+
+    <div class="section-inner">
+
+      <div class="section-label">
+        BEFORE TEACHING ENGLISH
+      </div>
+
+      <h2>
+        僕はまず、<br>
+        その子を見ます。
+      </h2>
+
+      <p class="section-text">
+        新しい生徒が来ても、いきなり英検の過去問から始めることはしません。
+        学校のワーク、ノート、宿題、小テスト。
+        どこでペンが止まるのか、どんな間違い方をするのか。
+        そこには、その子の「現在地」が表れています。
+        <br><br>
+        22年間、何千枚もの答案やノートを見てきた中で、
+        つまずき方には大きく3つのタイプがあると感じるようになりました。
+      </p>
+
+
+      <div class="type-grid">
+
+        <div class="type-card">
+
+          <div class="type-number">
+            TYPE 01
+          </div>
+
+          <h3>
+            あと少しで、<br>
+            一気に伸びる子
+          </h3>
+
+          <p>
+            基本の力はあるけれど、
+            確認不足や思い込みで結果につながっていないタイプ。
+            見るポイントを少し変えるだけで、
+            力を発揮し始めることがあります。
+          </p>
+
+        </div>
+
+
+        <div class="type-card">
+
+          <div class="type-number">
+            TYPE 02
+          </div>
+
+          <h3>
+            基礎が、どこかで<br>
+            抜けている子
+          </h3>
+
+          <p>
+            一生懸命問題集を進めても、
+            土台が不安定だと苦しくなります。
+            そんな時は英検教材から少し離れ、
+            学校の基礎へ戻ることも大切です。
+          </p>
+
+        </div>
+
+
+        <div class="type-card">
+
+          <div class="type-number">
+            TYPE 03
+          </div>
+
+          <h3>
+            勉強の進め方が<br>
+            分からない子
+          </h3>
+
+          <p>
+            頑張りたい気持ちはあるのに、
+            何から始めればいいのか分からない。
+            道筋を一緒に整理することで、
+            少しずつ自分のペースを作っていきます。
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- 帰宅部英検部 -->
+
+  <section class="section home-club">
+
+    <div class="section-inner">
+
+      <div class="section-label">
+        HOME IS A PLACE TO BEGIN
+      </div>
+
+      <h2>
+        家にいながら、<br>
+        世界につながる。
+      </h2>
+
+      <p class="section-text">
+        オンラインの良さは、
+        遠くから受けられる便利さだけではありません。
+        <br><br>
+        家は、多くの子どもにとって
+        一番安心して自分でいられる場所です。
+        人の目を気にせず間違えられる。
+        少し疲れた日でも、自分の部屋から参加できる。
+        <br><br>
+        その安心の中だからこそ、
+        小さな一歩を踏み出せる子もいます。
+      </p>
+
+
+      <div class="home-club-box">
+
+        <h3>
+          オンライン英検教室<br>
+          「帰宅部英検部」
+        </h3>
+
+        <p>
+          学校が終わって、家に帰る。<br>
+          おやつを食べたり、少し休んだりする。<br><br>
+
+          そんな日常の延長で、
+          昨日より一つだけ単語を覚える。
+          少しだけ英語を話してみる。
+          <br><br>
+
+          厳しい部活でも、偏差値を競う進学塾でもない。<br>
+          無理をしすぎず、それでも少しずつ、
+          自分の「軸」を作っていく。<br><br>
+
+          そんな放課後の居場所を目指しています。
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- 松本コージについて -->
+
+  <section class="section about" id="about">
+
+    <div class="section-inner">
+
+      <div class="section-label">
+        ABOUT KOJI MATSUMOTO
+      </div>
+
+      <h2>
+        僕も、<br>
+        一度立ち止まりました。
+      </h2>
+
+      <p class="section-text">
+        15歳で父を亡くし、
+        学校へ行けなくなりました。
+        高校を離れ、家から出ることも難しかった時期があります。
+        <br><br>
+        そんな僕を最初に外の世界へ連れ出してくれたのが、
+        たまたま始めた英語でした。
+      </p>
+
+      <div class="story-line">
+
+        一冊の英語の本から始まり、<br>
+        23歳でオーストラリアへ。<br>
+        その後、ニュージーランド、インド、カナダなどを旅しました。
+        <br><br>
+
+        帰国後、小さな公民館から英語教室を始め、
+        子どもたちと向き合って22年。
+        <br><br>
+
+        今、僕が伝えたいのは、
+        英語ができる人が偉いということではありません。
+        <br><br>
+
+        「自分にも、何かできるかもしれない。」
+        <br><br>
+
+        そう思える小さなきっかけが、
+        人の世界を少しずつ広げていくということです。
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- 最後 -->
+
+  <section class="section cta">
+
+    <div class="section-inner">
+
+      <div class="section-label">
+        START FROM WHERE YOU ARE
+      </div>
+
+      <h2>
+        どこから始めたらいいか、<br>
+        分からなくなったら。
+      </h2>
+
+      <p class="cta-text">
+        学校のワークでも、ノートでも、テストでも大丈夫です。
+        <br>
+        今やっているものから、
+        その子の「現在地」を一緒に探していきます。
+        <br><br>
+        焦らなくていい。
+        子どもには、一人ひとり違う歩幅があります。
+      </p>
+
+      <a class="button button-main" href="#">
+        帰宅部英検部について相談する
+      </a>
+
+      <div class="cta-note">
+        ※お問い合わせ先は後ほど設定します。
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <footer>
+
+    オンライン英検教室「帰宅部英検部」<br>
+    松本コージ
+
+  </footer>
+
 
 </body>
 </html>
